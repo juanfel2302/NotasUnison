@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "NotasUnison (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "NotasUnison (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
