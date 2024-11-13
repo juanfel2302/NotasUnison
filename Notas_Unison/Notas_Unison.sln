@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Unison", "Notas_Unison\Notas_Unison.csproj", "{5C05E2DD-E6B4-4A6C-A921-CA815A61BF57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Unison_Core", "Notas_Unison_Core\Notas_Unison_Core.csproj", "{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C05E2DD-E6B4-4A6C-A921-CA815A61BF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C05E2DD-E6B4-4A6C-A921-CA815A61BF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C05E2DD-E6B4-4A6C-A921-CA815A61BF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C05E2DD-E6B4-4A6C-A921-CA815A61BF57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
