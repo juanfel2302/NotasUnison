@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Notas_Unison"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Notas Unison" Height="450" Width="800">
+    <Grid x:Name="ContentArea">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Título en la parte superior -->
+        <TextBlock Text="Notas Unison"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Grid.Row="0"
+                   Margin="0,10,0,0" />
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <Image Source="/Imagenes/Logo-institucional-UNISON.jpg" 
+                   Width="150" Height="150"
+                   HorizontalAlignment="Center" />
+
+            <Button Content="Notas"
+                    Width="200" Height="40"
+                    HorizontalAlignment="Center" 
+                    Margin="0  20 0 0"/>
+            
+            <TextBlock Text="Alan Sebastian Perez Ibarra"
+                       FontSize="20"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Grid.Row="0"
+                       Margin="0,20,0,0"/>
+
+        </StackPanel>
 
     </Grid>
 </Window>
