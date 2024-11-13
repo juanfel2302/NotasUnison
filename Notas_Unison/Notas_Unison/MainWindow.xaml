@@ -12,7 +12,6 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <!-- Título en la parte superior -->
         <TextBlock Text="Notas Unison"
                    FontSize="24"
                    FontWeight="Bold"
