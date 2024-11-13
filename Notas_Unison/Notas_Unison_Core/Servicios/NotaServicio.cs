@@ -4,29 +4,29 @@ using Notas_Unison_Core.Models;
 
 namespace Notas_Unison_Core.Servicios;
 
-public class NotaServicio(IRepositorio<Nota> repositorio) : IServicio<Nota>
+public class NotaServicio(IRepositorio<Notas> repositorio) : IServicio<Notas>
 {
-    public void Agregar(Nota NotaNueva)
+    public void Agregar(Notas NotaNueva)
     {
         repositorio.Agregar(NotaNueva);
     }
 
-    public List<Nota> Listar()
+    public List<Notas> Listar()
     {
         return repositorio.Listar();
     }
 
-    public Nota ObtenerPorId(Guid id)
+    public Notas ObtenerPorId(Guid id)
     {
         return repositorio.ObtenerPorId(id);
     }
 
-    public void Modificar(Nota NotaModificada)
+    public void Modificar(Notas NotaModificada)
     {
         repositorio.Modificar(NotaModificada);
     }
 
-    public void Eliminar(Nota NotaEliminada)
+    public void Eliminar(Notas NotaEliminada)
     {
         repositorio.Eliminar(NotaEliminada);
     }
