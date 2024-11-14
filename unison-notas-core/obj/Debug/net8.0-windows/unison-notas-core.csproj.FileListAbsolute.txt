@@ -1,0 +1,12 @@
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\bin\Debug\net8.0-windows\unison-notas-core.deps.json
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\bin\Debug\net8.0-windows\unison-notas-core.dll
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\bin\Debug\net8.0-windows\unison-notas-core.pdb
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.csproj.AssemblyReference.cache
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.AssemblyInfoInputs.cache
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.AssemblyInfo.cs
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.csproj.CoreCompileInputs.cache
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.dll
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\refint\unison-notas-core.dll
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\unison-notas-core.pdb
+C:\Users\saul\RiderProjects\unison-notas\unison-notas-core\obj\Debug\net8.0-windows\ref\unison-notas-core.dll

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "2jd7UMrBcHA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-app\\unison-notas-app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saul\\.nuget\\packages\\communitytoolkit.mvvm\\8.3.2\\communitytoolkit.mvvm.8.3.2.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\wpf-ui\\3.0.5\\wpf-ui.3.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
