@@ -1,0 +1,40 @@
+﻿<Window x:Class="Notas_Unison.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notas_Unison"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Background="#F0C1E1">
+    <DockPanel>
+        <TextBlock Text="Alejandro Sandoval Millan"
+                   DockPanel.Dock="Bottom"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 10"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+            <Image Source="pack://application:,,,/Notas_Unison;component/assets/logo.png"
+                   Height="200"
+                   Margin="0 20 0  0"/>
+            <TextBlock FontSize="30"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Text="Notas Unison"/>
+            <ui:Button Margin="0 15 0 10"
+                       HorizontalAlignment="Center"
+                       Content="Notas"
+                       Width="100"
+                       Height="35"
+                       Foreground="Black"
+                       Background="#FDDBBB"
+                       FontWeight="DemiBold"
+                       FontSize="15"
+                       CornerRadius="15">
+                <ui:Button.Icon>
+                    <ui:SymbolIcon Symbol="Notepad16"/>
+                </ui:Button.Icon>
+            </ui:Button>
+        </StackPanel>
+    </DockPanel>
+</Window>
