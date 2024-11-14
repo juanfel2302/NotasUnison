@@ -23,5 +23,11 @@ C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\
 C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Notas_Unison.pdb
 C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Notas_Unison.genruntimeconfig.cache
 C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\ref\Notas_Unison.dll
-C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Views\InformacionVista.g.cs
-C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Views\InformacionVista.baml
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Views\InformacionView.g.cs
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Views\InformacionView.baml
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\bin\Debug\net8.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Notas_Unison.csproj.AssemblyReference.cache
+C:\Users\palan\Documents\Unison\PDS 1\NotasUnison\Notas_Unison\Notas_Unison\obj\Debug\net8.0-windows\Notas_Un.9A5D2CAD.Up2Date

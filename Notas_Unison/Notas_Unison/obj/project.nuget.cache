@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zBC2iCHvNmk=",
+  "dgSpecHash": "Q6tC7tZZhYo=",
   "success": true,
   "projectFilePath": "C:\\Users\\palan\\Documents\\Unison\\PDS 1\\NotasUnison\\Notas_Unison\\Notas_Unison\\Notas_Unison.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\palan\\.nuget\\packages\\communitytoolkit.mvvm\\8.3.2\\communitytoolkit.mvvm.8.3.2.nupkg.sha512",
+    "C:\\Users\\palan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\palan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\palan\\.nuget\\packages\\wpf-ui\\3.0.5\\wpf-ui.3.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

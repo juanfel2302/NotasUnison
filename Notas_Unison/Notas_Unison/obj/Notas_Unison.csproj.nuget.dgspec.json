@@ -48,6 +48,20 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.3.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "WPF-UI": {
+              "target": "Package",
+              "version": "[3.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
