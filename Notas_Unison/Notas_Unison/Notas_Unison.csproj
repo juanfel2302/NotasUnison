@@ -14,4 +14,15 @@
       <PackageReference Include="WPF-UI" Version="3.0.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Notas_Unison_Core\Notas_Unison_Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Imagenes\Logo-institucional-UNISON.jpg" />
+      <Resource Include="Imagenes\Logo-institucional-UNISON.jpg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
 </Project>

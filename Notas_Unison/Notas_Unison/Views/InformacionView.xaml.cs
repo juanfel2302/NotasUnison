@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 namespace Notas_Unison.Views
 {
-    public partial class InformacionView : Page
+    public partial class InformacionView : Window
     {
         public InformacionView()
         {

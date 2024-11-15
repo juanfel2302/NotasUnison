@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Unison", "Notas_Uniso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Unison_Core", "Notas_Unison_Core\Notas_Unison_Core.csproj", "{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notas_Unison_Test", "Notas_Unison_Test\Notas_Unison_Test.csproj", "{A21B866A-A882-42D0-B818-589FBA346706}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63B9A3ED-07A1-4FD0-B8B0-F45D84E70BC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A21B866A-A882-42D0-B818-589FBA346706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21B866A-A882-42D0-B818-589FBA346706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21B866A-A882-42D0-B818-589FBA346706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21B866A-A882-42D0-B818-589FBA346706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

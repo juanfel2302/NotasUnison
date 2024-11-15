@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 namespace Notas_Unison.Views;
 
-public partial class AgregarView : Page
+public partial class AgregarView : Window
 {
     public AgregarView()
     {
