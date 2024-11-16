@@ -15,4 +15,14 @@
       <PackageReference Include="WPF-UI" Version="3.0.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Resourses\" />
+      <Folder Include="Servicios\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\unison-notas-core\unison-notas-core.csproj" />
+      <ProjectReference Include="..\unison-notas-testing\unison-notas-testing.csproj" />
+    </ItemGroup>
+
 </Project>
