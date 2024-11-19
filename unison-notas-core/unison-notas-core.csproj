@@ -1,11 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0-windows</TargetFramework>
-        <RootNamespace>notas_unison_core</RootNamespace>
-        <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>Unison_Almacen_Core</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>

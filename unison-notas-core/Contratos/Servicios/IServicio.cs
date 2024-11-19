@@ -1,11 +1,10 @@
-using notas_unison_core.Contratos.Servicios;
-using notas_unison_core.modelos;
-using unison_notas_core.Contratos.Repositorios;
+﻿namespace Unison_Almacen_Core.Contratos.Servicios;
 
-
-namespace notas_unison_core.Contratos.Servicios;
-
-public class NotasServicio(IRepositorio<Notas> repositorio) : IServicio<Notas>
+public interface IServicio<T>
 {
-    
+    void Agregar(T productoNuevo);
+    List<T> Listar();
+    T ObtenerPorId(Guid id);
+    void Modificar(T productoModificado);
+    void Eliminar(T productoAEliminar);
 }

@@ -1,8 +1,8 @@
-using notas_unison_core.Contratos.Repositorios;
-using notas_unison_core.Contratos.Servicios;
-using notas_unison_core.modelos;
+﻿using Unison_Almacen_Core.Contratos.Repositorios;
+using Unison_Almacen_Core.Contratos.Servicios;                                      
+using Unison_Almacen_Core.Modelos;
 
-namespace notas_unison_core.Servicios;
+namespace Unison_Almacen_Core.Servicios;
 
 public class NotasServicio(IRepositorio<Notas> repositorio) : IServicio<Notas>
 {
@@ -16,19 +16,18 @@ public class NotasServicio(IRepositorio<Notas> repositorio) : IServicio<Notas>
         return repositorio.Listar();
     }
 
-    public Notas ObtenerPorI(Guid id)
+    public Notas ObtenerPorId(Guid id)
     {
-        return repositorio.ObtenerPorI(id);
+        return repositorio.ObtenerPorId(id);
     }
 
-    public void Modificar(Notas notasModificar)
+    public void Modificar(Notas notasModificado)
     {
-        repositorio.Modificar(notasModificar);
+        repositorio.Modificar(notasModificado);
     }
 
-    public void Eliminar(Notas notasEliminar)
+    public void Eliminar(Notas notasAEliminar)
     {
-        repositorio.Eliminar(notasEliminar);
+        repositorio.Eliminar(notasAEliminar);
     }
-    
 }

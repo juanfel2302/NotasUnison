@@ -1,18 +1,79 @@
 ﻿using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
-using unison_notas_app.Servicios;
-using unison_notas_app.ViewModel;
-using unison_notas_app.Views;
-using unison_notas_core.Repositorios;
-using Wpf.Ui
+using Unison_Almacen_App.Servicios;
+using Unison_Almacen_App.ViewModel;
+using Unison_Almacen_App.Views;
+using Unison_Almacen_Core.BaseDeDatos;
+using Unison_Almacen_Core.Contratos.Repositorios;
+using Unison_Almacen_Core.Contratos.Servicios;
+using Unison_Almacen_Core.Modelos;
+using Unison_Almacen_Core.Repositorios;
+using Unison_Almacen_Core.Servicios;
+using Wpf.Ui;
 
-
-namespace unison_notas_app;
+namespace Unison_Almacen_App;
 
 /// <summary>
-/// Interaction logic for App.xaml
+///     Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
+public sealed partial class App : Application
 {
+    public App()
+    {
+        InitializeComponent();
+        
+        // Inicializar los servicios.
+        Services = ConfigServices();
+        
+        // Asegurar que la base de datos existe.
+        using var bd = new NotasDB();
+        bd.Database.EnsureCreated();
+    }
     
+    /// <summary>
+    /// Obtiene la referencia de la aplicación actual.
+    /// </summary>
+    public new static App Current => (App)Application.Current;
+
+    /// <summary>
+    /// Obtiene el proveedor para resolver los servicios de la aplicación.
+    /// </summary>
+    public IServiceProvider Services { get; }
+    
+    /// <summary>
+    /// Configura los servicios de la aplicación.
+    /// </summary>
+    /// <returns></returns>
+    private static IServiceProvider ConfigServices()
+    {
+        var services = new ServiceCollection();
+        
+        // Servicios.
+        services.AddTransient<NotasDB>();
+        services.AddTransient<IServicio<Notas>, NotasServicio>();
+        services.AddTransient<IRepositorio<Notas>, NotasRepositorio>();
+        services.AddSingleton<IPageService, PageService>();
+
+        // MainWindow.
+        services.AddSingleton<MainWindow>();
+                
+        // Views
+        services.AddTransient<InicioView>();
+        services.AddTransient<NotasView>();
+        
+        // ViewModels.
+        services.AddTransient<MainWindowViewModel>();
+        services.AddTransient<InicioViewModel>();
+        services.AddTransient<NotasViewModel>();
+        
+        return services.BuildServiceProvider();
+    }
+
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        base.OnStartup(e);
+        
+        var mainWindow = Services.GetRequiredService<MainWindow>();
+        mainWindow.Show();
+    }
 }

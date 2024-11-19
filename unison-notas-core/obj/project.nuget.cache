@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o2evBiiTlh4=",
+  "dgSpecHash": "HlgH4ctqFEA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-core\\unison-notas-core.csproj",
+  "projectFilePath": "C:\\Users\\saul\\Desktop\\PDSI-WPF-Almacen\\Rider-Almacen\\Unison-Almacen\\Unison-Notas-Core\\Unison-Notas-Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saul\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.10\\microsoft.data.sqlite.core.8.0.10.nupkg.sha512",
     "C:\\Users\\saul\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",

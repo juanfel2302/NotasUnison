@@ -1,20 +1,20 @@
-﻿unison-notas-app
+﻿Unison-Notas-App
 
 
 winexe
 C#
 .cs
-C:\Users\saul\RiderProjects\unison-notas\unison-notas-app\obj\Debug\net8.0-windows\
-unison_notas_app
+C:\Users\saul\Desktop\PDSI-WPF-Almacen\Rider-Almacen\Unison-Almacen\Unison-Notas-App\obj\Debug\net8.0-windows\
+Unison_Almacen_App
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\saul\RiderProjects\unison-notas\unison-notas-app\App.xaml
-11407045341
+C:\Users\saul\Desktop\PDSI-WPF-Almacen\Rider-Almacen\Unison-Almacen\Unison-Notas-App\App.xaml
+3-1934477673
 
-4288477991
-2321320502891
-MainWindow.xaml;
+10-1325315065
+219-501713547
+MainWindow.xaml;Views\InicioView.xaml;Views\NotasView.xaml;
 
-True
+False
 

@@ -18,6 +18,5 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgWPF-UI Condition=" '$(PkgWPF-UI)' == '' ">C:\Users\saul\.nuget\packages\wpf-ui\3.0.5</PkgWPF-UI>
-    <PkgNUnit_Analyzers Condition=" '$(PkgNUnit_Analyzers)' == '' ">C:\Users\saul\.nuget\packages\nunit.analyzers\3.9.0</PkgNUnit_Analyzers>
   </PropertyGroup>
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-core\\unison-notas-core.csproj": {}
+    "C:\\Users\\saul\\Desktop\\PDSI-WPF-Almacen\\Rider-Almacen\\Unison-Almacen\\Unison-Notas-Core\\Unison-Notas-Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-core\\unison-notas-core.csproj": {
+    "C:\\Users\\saul\\Desktop\\PDSI-WPF-Almacen\\Rider-Almacen\\Unison-Almacen\\Unison-Notas-Core\\Unison-Notas-Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-core\\unison-notas-core.csproj",
-        "projectName": "unison-notas-core",
-        "projectPath": "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-core\\unison-notas-core.csproj",
+        "projectUniqueName": "C:\\Users\\saul\\Desktop\\PDSI-WPF-Almacen\\Rider-Almacen\\Unison-Almacen\\Unison-Notas-Core\\Unison-Notas-Core.csproj",
+        "projectName": "Unison-Notas-Core",
+        "projectPath": "C:\\Users\\saul\\Desktop\\PDSI-WPF-Almacen\\Rider-Almacen\\Unison-Almacen\\Unison-Notas-Core\\Unison-Notas-Core.csproj",
         "packagesPath": "C:\\Users\\saul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saul\\RiderProjects\\unison-notas\\unison-notas-core\\obj\\",
+        "outputPath": "C:\\Users\\saul\\Desktop\\PDSI-WPF-Almacen\\Rider-Almacen\\Unison-Almacen\\Unison-Notas-Core\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
@@ -23,15 +23,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-windows"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows7.0": {
-            "targetAlias": "net8.0-windows",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,8 +47,8 @@
         }
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -77,9 +77,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"

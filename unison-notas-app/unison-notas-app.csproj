@@ -3,7 +3,7 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net8.0-windows</TargetFramework>
-        <RootNamespace>unison_notas_app</RootNamespace>
+        <RootNamespace>Unison_Almacen_App</RootNamespace>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UseWPF>true</UseWPF>
@@ -16,13 +16,18 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Resourses\" />
-      <Folder Include="Servicios\" />
+      <ProjectReference Include="..\Unison-Notas-Core\Unison-Notas-Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\unison-notas-core\unison-notas-core.csproj" />
-      <ProjectReference Include="..\unison-notas-testing\unison-notas-testing.csproj" />
+      <None Remove="Resources\Logo_Unison.png" />
+      <Resource Include="Resources\Logo_Unison.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\images.jpg" />
+      <Resource Include="Resources\images.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
 </Project>
