@@ -33,40 +33,16 @@
                        FontWeight="SemiBold" 
                        Margin="0,0,0,10"/>
             
-            <ItemsControl Name="NotasList" 
-                          Margin="0,0,0,10">
-                
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border BorderBrush="Gray" 
-                                BorderThickness="1" 
-                                CornerRadius="10" 
-                                Padding="10" 
-                                Margin="0,5">
-                            
-                            <TextBlock Text="Titulo" 
-                                       FontSize="14" 
-                                       VerticalAlignment="Center"/>
-                        </Border>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
+            <DataGrid ItemsSource="{Binding Notas}"
+                      AutoGenerateColumns="False"
+                      Margin="0 20 0 0"
+                      CanUserAddRows="False"
+                      HeadersVisibility="Column"
+                      ColumnWidth="*">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding Titulo}"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
-
-        <Button Width="50" 
-                   Height="50" 
-                   HorizontalAlignment="Right" 
-                   VerticalAlignment="Bottom" 
-                   Margin="10" 
-                   Background="LightGreen" 
-                   BorderBrush="Gray" 
-                   BorderThickness="1" 
-                   FontSize="24" 
-                   Foreground="Black"
-                   Click="IrAgregarView">
-            <TextBlock Text="+" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center"/>
-        </Button>
     </Grid>
 </Page>

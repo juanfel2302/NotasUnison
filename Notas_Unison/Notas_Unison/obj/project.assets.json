@@ -1222,6 +1222,7 @@
       "packagesPath": "C:\\Users\\palan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\palan\\Documents\\Unison\\PDS 1\\NotasUnison\\Notas_Unison\\Notas_Unison\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],

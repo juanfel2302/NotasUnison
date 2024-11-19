@@ -6,14 +6,11 @@ namespace Notas_Unison.Views;
 
 public partial class InicioView : Page
 {
-    public InicioView()
+    private readonly InicioViewModel _inicioViewModel;
+
+    public InicioView(InicioViewModel viewModel)
     {
         InitializeComponent();
-    }
-    
-    private void IrAgregarView(object sender, RoutedEventArgs e)
-    {
-        var agregarView = new AgregarView();
-        agregarView.Show();
+        DataContext = viewModel;
     }
 }

@@ -62,6 +62,9 @@ public sealed partial class App : Application
         // Views
         services.AddTransient<Main>();
         services.AddTransient<InicioView>();
+        services.AddTransient<AgregarView>();
+        services.AddTransient<InformacionView>();
+        
         
         // ViewModels.
         services.AddTransient<MainWindowViewModel>();

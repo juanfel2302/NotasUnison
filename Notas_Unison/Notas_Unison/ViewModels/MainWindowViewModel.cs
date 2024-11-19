@@ -21,6 +21,18 @@ public partial class MainWindowViewModel : ObservableObject
             {
                 Content = "Notas",
                 TargetPageType = typeof(InicioView)
+            },
+            
+            new NavigationViewItem()
+            {
+                Content = "Agregar Nota",
+                TargetPageType = typeof(AgregarView)
+            },
+            
+            new NavigationViewItem()
+            {
+                Content = "Editar Nota",
+                TargetPageType = typeof(InformacionView)
             }
         ];
     }
