@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2Wqqhlsnh4Y=",
+  "dgSpecHash": "+CpsvUeWH34=",
   "success": true,
   "projectFilePath": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mrkir\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0-preview2\\communitytoolkit.mvvm.8.4.0-preview2.nupkg.sha512",
+    "C:\\Users\\mrkir\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\mrkir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\mrkir\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
     "C:\\Users\\mrkir\\.nuget\\packages\\wpf-ui\\4.0.0-rc.2\\wpf-ui.4.0.0-rc.2.nupkg.sha512",
     "C:\\Users\\mrkir\\.nuget\\packages\\wpf-ui.abstractions\\4.0.0-rc.2\\wpf-ui.abstractions.4.0.0-rc.2.nupkg.sha512"

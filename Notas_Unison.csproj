@@ -9,6 +9,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0-preview2" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
       <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
       <PackageReference Include="WPF-UI" Version="4.0.0-rc.2" />
     </ItemGroup>
