@@ -10,7 +10,7 @@
       Title="Title" Height="450" Width="800">
     
     <DockPanel>
-        <TextBlock Text="Alejandro Sandoval Millan"
+        <TextBlock Text="Sandoval Millan Alejandro"
                    DockPanel.Dock="Bottom"
                    HorizontalAlignment="Center"
                    Margin="0 10 0 10"/>
