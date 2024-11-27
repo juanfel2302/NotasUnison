@@ -1,9 +1,8 @@
 C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Notas_Unison.csproj.AssemblyReference.cache
 C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\GenericPage.g.cs
-C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\NotasView.g.cs
-C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\Page1.g.cs
-C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\Page2.g.cs
+C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\ListaDeNotas.g.cs
+C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\NuevaNota.g.cs
 C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Pages\Title.g.cs
 C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\mrkir\RiderProjects\Notas_Unison\obj\Debug\net8.0-windows\Notas_Unison_MarkupCompile.cache

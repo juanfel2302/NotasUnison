@@ -1,4 +1,7 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
+using MessageBox = Wpf.Ui.Controls.MessageBox;
+using MessageBoxButton = Wpf.Ui.Controls.MessageBoxButton;
 
 namespace Notas_Unison.Pages;
 
@@ -7,6 +10,21 @@ public partial class ListaDeNotas : Page
     public ListaDeNotas()
     {
         InitializeComponent();
+    }
+
+    private void GoToNuevaNota(object sender, RoutedEventArgs e)
+    {
+        ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new NuevaNota());
+    }
+
+    private void ImportarNota(object sender, RoutedEventArgs e)
+    {
+        
+    }
+
+    private void ExportarNota(object sender, RoutedEventArgs e)
+    {
+        
     }
     
     private void AddSidebarItem_Click(object sender, RoutedEventArgs e)
@@ -18,7 +36,7 @@ public partial class ListaDeNotas : Page
         if (!string.IsNullOrWhiteSpace(newItem))
         {
             // Agregar el nuevo elemento al ListBox
-            SidebarListBox.Items.Add(newItem);
+            NotasListBox.Items.Add(newItem);
         }
         else
         {
@@ -39,22 +57,14 @@ public partial class ListaDeNotas : Page
     
     private void SidebarListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (SidebarListBox.SelectedItem != null)
+        if (NotasListBox.SelectedItem != null)
         {
-            string selectedItem = SidebarListBox.SelectedItem.ToString();
-
-            // Cambiar el contenido del Frame según el elemento seleccionado
+            string selectedItem = NotasListBox.SelectedItem.ToString();
+            
             switch (selectedItem)
             {
-                case "Elemento 1":
-                    MainBoard.Navigate(new Page1());
-                    break;
-                case "Elemento 2":
-                    MainBoard.Navigate(new Page2());
-                    break;
                 default:
-                    // Cargar una página genérica
-                    MainBoard.Navigate(new GenericPage(selectedItem));
+                    ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new InformacionDeLaNota());
                     break;
             }
         }

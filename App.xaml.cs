@@ -2,6 +2,8 @@
 using System.Data;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
+using Notas_Unison_Core.BaseDeDatos;
+using Notas_Unison_Core.Contratos.Servicios;
 using Notas_Unison.Servicios;
 using Wpf.Ui;
 
@@ -21,7 +23,7 @@ public sealed partial class App : Application
         Services = ConfigServices();
         
         // Asegurar que la base de datos existe.
-        using var bd = new ProductoBD();
+        using var bd = new NotasBD();
         bd.Database.EnsureCreated();
     }
     
@@ -44,9 +46,9 @@ public sealed partial class App : Application
         var services = new ServiceCollection();
         
         // Servicios.
-        services.AddTransient<ProductoBD>();
-        services.AddTransient<IServicio<Producto>, ProductoServicio>();
-        services.AddTransient<IRepositorio<Producto>, ProductoRepositorio>();
+        services.AddTransient<NotasBD>();
+        services.AddTransient<IServicio<Nota>, ProductoServicio>();
+        services.AddTransient<IRepositorio<Nota>, ProductoRepositorio>();
         services.AddSingleton<IPageService, PageService>();
 
         // MainWindow.

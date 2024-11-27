@@ -13,7 +13,7 @@ public partial class Title : Page
     private void GoToNotas(object sender, RoutedEventArgs e)
     {
         // Cargar el contenido de SecondWindow en el Frame
-        ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new NotasView());
+        ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new ListaDeNotas());
     }
     
 }

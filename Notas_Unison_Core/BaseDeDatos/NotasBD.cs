@@ -51,6 +51,7 @@ public class NotasBD : DbContext
             nota.HasKey(n => n.Id);
             nota.Property(n => n.Titulo).IsRequired();
             nota.Property(n => n.Contenido).IsRequired();
+            nota.Property(n => n.Colorin).IsRequired();
         });
 
     }

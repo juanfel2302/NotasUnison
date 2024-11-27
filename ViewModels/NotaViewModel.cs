@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 using System.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Notas_Unison_Core.Modelos;
 using Wpf.Ui.Input;
 
@@ -34,7 +35,7 @@ public class NotaViewModel : INotifyPropertyChanged
 
     private void AddNota()
     {
-        var newNota = new Nota { Titulo = "Nueva Nota", Contenido = "Contenido..." };
+        var newNota = new Nota { Titulo = "Nueva Nota", Contenido = "Contenido...", Colorin = "#F0C1E1"};
         Notas.Add(newNota);
         SelectedNote = newNota; // Seleccionar la nueva nota
     }
