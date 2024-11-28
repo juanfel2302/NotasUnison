@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Notas_Unison_Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3741908abff8f1e9722235b1b8dc92a2311ebca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2d1a8ff0e691480a552b8f166330962c6c78ac8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Notas_Unison_Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Notas_Unison_Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

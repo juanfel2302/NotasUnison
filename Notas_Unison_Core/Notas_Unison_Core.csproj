@@ -10,11 +10,8 @@
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
       <PackageReference Include="SQLite" Version="3.13.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Contratos\Repositorios\" />
     </ItemGroup>
 
 </Project>

@@ -27,23 +27,6 @@ public partial class ListaDeNotas : Page
         
     }
     
-    private void AddSidebarItem_Click(object sender, RoutedEventArgs e)
-    {
-        // Pedir el nombre del nuevo elemento
-        string newItem = PromptForItemName();
-
-        // Verificar si el usuario ingresó un valor
-        if (!string.IsNullOrWhiteSpace(newItem))
-        {
-            // Agregar el nuevo elemento al ListBox
-            NotasListBox.Items.Add(newItem);
-        }
-        else
-        {
-            MessageBox.Show("No se agregó ningún elemento, el nombre no puede estar vacío.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-    }
-    
     private string PromptForItemName()
     {
         // Mostrar un cuadro de diálogo simple para ingresar el nombre

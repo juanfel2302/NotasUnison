@@ -4,7 +4,9 @@ using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Notas_Unison_Core.BaseDeDatos;
 using Notas_Unison_Core.Contratos.Servicios;
+using Notas_Unison.Pages;
 using Notas_Unison.Servicios;
+using Notas_Unison.ViewModels;
 using Wpf.Ui;
 
 
@@ -55,13 +57,13 @@ public sealed partial class App : Application
         services.AddSingleton<MainWindow>();
                 
         // Views
-        services.AddTransient<InicioView>();
-        services.AddTransient<ProductoView>();
+        services.AddTransient<InformacionDeLaNota>();
+        services.AddTransient<ListaDeNotas>();
+        services.AddTransient<NuevaNota>();
+        services.AddTransient<Title>();
         
         // ViewModels.
-        services.AddTransient<MainWindowViewModel>();
-        services.AddTransient<InicioViewModel>();
-        services.AddTransient<ProductoViewModel>();
+        services.AddTransient<NotaViewModel>();
         
         return services.BuildServiceProvider();
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison_Core\\Notas_Unison_Core.csproj": {}
+    "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison_Core\\Notas_Unison_Core.csproj": {
+    "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison_Core\\Notas_Unison_Core.csproj",
-        "projectName": "Notas_Unison_Core",
-        "projectPath": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison_Core\\Notas_Unison_Core.csproj",
+        "projectUniqueName": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison.csproj",
+        "projectName": "Notas_Unison",
+        "projectPath": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison.csproj",
         "packagesPath": "C:\\Users\\mrkir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison_Core\\obj\\",
+        "outputPath": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
@@ -51,21 +51,21 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
-              "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.4.0-preview2, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "SQLite": {
+            "Microsoft.VisualBasic": {
               "target": "Package",
-              "version": "[3.13.0, )"
+              "version": "[10.3.0, )"
+            },
+            "WPF-UI": {
+              "target": "Package",
+              "version": "[4.0.0-rc.2, )"
             }
           },
           "imports": [

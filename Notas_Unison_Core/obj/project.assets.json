@@ -1321,6 +1321,7 @@
     "net8.0-windows7.0": [
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite.Core >= 9.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 9.0.0",
       "SQLite >= 3.13.0"
     ]
   },
@@ -1380,6 +1381,10 @@
             "version": "[9.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[9.0.0, )"
           },
