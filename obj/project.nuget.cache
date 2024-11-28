@@ -1,15 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "+CpsvUeWH34=",
+  "dgSpecHash": "Hj9uR3ZEgT4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrkir\\RiderProjects\\Notas_Unison\\Notas_Unison.csproj",
+  "projectFilePath": "C:\\Users\\saul\\Desktop\\NotasUnison\\Notas_Unison.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mrkir\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0-preview2\\communitytoolkit.mvvm.8.4.0-preview2.nupkg.sha512",
-    "C:\\Users\\mrkir\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
-    "C:\\Users\\mrkir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
-    "C:\\Users\\mrkir\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
-    "C:\\Users\\mrkir\\.nuget\\packages\\wpf-ui\\4.0.0-rc.2\\wpf-ui.4.0.0-rc.2.nupkg.sha512",
-    "C:\\Users\\mrkir\\.nuget\\packages\\wpf-ui.abstractions\\4.0.0-rc.2\\wpf-ui.abstractions.4.0.0-rc.2.nupkg.sha512"
+    "C:\\Users\\saul\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0-preview2\\communitytoolkit.mvvm.8.4.0-preview2.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0\\microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0\\microsoft.extensions.logging.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.options\\9.0.0\\microsoft.extensions.options.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.0\\system.diagnostics.diagnosticsource.9.0.0.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\wpf-ui\\4.0.0-rc.2\\wpf-ui.4.0.0-rc.2.nupkg.sha512",
+    "C:\\Users\\saul\\.nuget\\packages\\wpf-ui.abstractions\\4.0.0-rc.2\\wpf-ui.abstractions.4.0.0-rc.2.nupkg.sha512"
   ],
   "logs": []
 }

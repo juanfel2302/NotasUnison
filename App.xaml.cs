@@ -3,9 +3,12 @@ using System.Data;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Notas_Unison_Core.BaseDeDatos;
+using Notas_Unison_Core.Contratos.Repositorios;
 using Notas_Unison_Core.Contratos.Servicios;
+using Notas_Unison_Core.Modelos;
+using Notas_Unison_Core.Repositorios;
+using Notas_Unison_Core.Servicios;
 using Notas_Unison.Pages;
-using Notas_Unison.Servicios;
 using Notas_Unison.ViewModels;
 using Wpf.Ui;
 
@@ -49,9 +52,9 @@ public sealed partial class App : Application
         
         // Servicios.
         services.AddTransient<NotasBD>();
-        services.AddTransient<IServicio<Nota>, ProductoServicio>();
-        services.AddTransient<IRepositorio<Nota>, ProductoRepositorio>();
-        services.AddSingleton<IPageService, PageService>();
+        services.AddTransient<IServicio<Nota>, NotaServicio>();
+        services.AddTransient<IRepositorio<Nota>, NotaRepositorio>();
+
 
         // MainWindow.
         services.AddSingleton<MainWindow>();
