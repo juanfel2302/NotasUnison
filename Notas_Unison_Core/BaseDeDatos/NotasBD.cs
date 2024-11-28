@@ -31,6 +31,8 @@ public class NotasBD : DbContext
 
         // 1. Asegurar que existe el directorio de la base de datos.
         if (!Directory.Exists(directorio)) Directory.CreateDirectory(directorio);
+        
+        optionsBuilder.UseSqlite($"Data Source={directorio}");
 
         // 2. Configuramos el nombre de la base de datos.
         optionsBuilder.UseSqlite(

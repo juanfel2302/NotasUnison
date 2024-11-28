@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Notas_Unison_Core.Contratos.Servicios;
@@ -9,7 +10,7 @@ namespace Notas_Unison.ViewModel;
 
 public partial class NotaViewModel : ObservableObject
 {
-    [ObservableProperty] private Nota nota = new Nota();
+    [ObservableProperty] private Nota _nota = new Nota();
     [ObservableProperty] private List<Nota> _notas;
 
     [ObservableProperty] private string _txtBotonFormulario;
@@ -27,7 +28,7 @@ public partial class NotaViewModel : ObservableObject
         // Guardar la referencia del servicio.
         _servicio = servicio;
         
-        // Obtener los productos de la base de datos.
+        // Obtener las notas de la base de datos.
         _notas = _servicio.Listar();
         
         // Texto del formulario.

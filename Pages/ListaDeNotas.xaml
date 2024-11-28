@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
       xmlns:local="clr-namespace:Notas_Unison.Pages"
-      xmlns:viewModel="clr-namespace:Notas_Unison.ViewModels"
+      xmlns:viewModel="clr-namespace:Notas_Unison.ViewModel"
       d:DataContext="{d:DesignInstance viewModel:NotaViewModel}"
       mc:Ignorable="d"
       Title="ListaDeNotas"
@@ -20,6 +20,7 @@
             <DockPanel Margin="10 10 10 10"
                        DockPanel.Dock="Top">
                 <ListBox x:Name="NotasListBox"
+                         ItemsSource="{Binding Path=Nota.Titulo, Mode=OneWay}"
                          DockPanel.Dock="Top"
                          Height="285"
                          Width="710"

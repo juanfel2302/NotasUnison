@@ -58,6 +58,7 @@ public sealed partial class App : Application
 
         // MainWindow.
         services.AddSingleton<MainWindow>();
+        services.AddSingleton<NotaViewModel>();
                 
         // Views
         services.AddTransient<InformacionDeLaNota>();

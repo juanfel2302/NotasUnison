@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using Notas_Unison.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
+using Notas_Unison.ViewModel;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
 using MessageBoxButton = Wpf.Ui.Controls.MessageBoxButton;
 
@@ -8,10 +9,11 @@ namespace Notas_Unison.Pages;
 
 public partial class ListaDeNotas : Page
 {
-    public ListaDeNotas(NotaViewModel notaViewModel)
+    public ListaDeNotas()
     {
         InitializeComponent();
-        DataContext = notaViewModel;
+        var viewModel = App.Current.Services.GetService<NotaViewModel>();
+        DataContext = viewModel;
     }
     
 
@@ -28,17 +30,6 @@ public partial class ListaDeNotas : Page
     private void ExportarNota(object sender, RoutedEventArgs e)
     {
         
-    }
-    
-    private string PromptForItemName()
-    {
-        // Mostrar un cuadro de diálogo simple para ingresar el nombre
-        string input = Microsoft.VisualBasic.Interaction.InputBox(
-            "Por favor, ingresa el nombre del nuevo elemento:",
-            "Añadir elemento",
-            "Nota1");
-
-        return input;
     }
     
     private void SidebarListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

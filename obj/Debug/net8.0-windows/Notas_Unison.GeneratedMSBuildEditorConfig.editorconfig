@@ -13,6 +13,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Notas_Unison
-build_property.ProjectDir = C:\Users\saul\Desktop\NotasUnison\
+build_property.ProjectDir = C:\Users\mrkir\RiderProjects\Notas_Unison\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

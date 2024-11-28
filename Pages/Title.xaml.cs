@@ -6,16 +6,15 @@ namespace Notas_Unison.Pages;
 
 public partial class Title : Page
 {
-    public Title(NotaViewModel notaViewModel)
+    public Title()
     {
         InitializeComponent();
-        DataContext = notaViewModel;
     }
 
 
     private void GoToNotas(object sender, RoutedEventArgs e)
     {
-        // Cargar el contenido de SecondWindow en el Frame
+        // Cargar contenido en el frame jeje
         ((MainWindow)Application.Current.MainWindow).MainFrame.Navigate(new ListaDeNotas());
     }
     

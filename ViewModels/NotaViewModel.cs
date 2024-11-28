@@ -46,7 +46,7 @@ public class NotaViewModel : INotifyPropertyChanged
         // Puedes llamar a un servicio que maneje la persistencia
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
+    public event PropertyChangedEventHandler? PropertyChanged;
 
     protected void OnPropertyChanged(string propertyName)
     {

@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Extensions.DependencyInjection;
 using Notas_Unison.Pages;
 using Notas_Unison.ViewModels;
 
@@ -18,7 +19,7 @@ namespace Notas_Unison;
 /// </summary>
 public partial class MainWindow : Window
 {
-    public MainWindow(MainWindowViewModel viewModel)
+    public MainWindow()
     {
         InitializeComponent();
         MainFrame.Navigate(new Title());

@@ -5,6 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
       xmlns:local="clr-namespace:Notas_Unison.Pages"
+      xmlns:viewModel="clr-namespace:Notas_Unison.ViewModel"
+      d:DataContext="{d:DesignInstance viewModel:NotaViewModel}"
       mc:Ignorable="d"
       Title="NuevaNota"
       Height="450"
@@ -28,14 +30,14 @@
                     <TextBlock Text="Titulo"
                                FontWeight="SemiBold"
                                HorizontalAlignment="Left"/> 
-                    <TextBox Text="Agregar"
+                    <ui:TextBox Text="{Binding Path=Nota.Titulo, Mode=OneWay}"
                              Background="Azure"
                              Foreground="Black"
                              Margin="0 0 0 10"/>
                     <TextBlock Text="Contenido"
                                FontWeight="SemiBold"
                                HorizontalAlignment="Left"/>
-                    <TextBox Text="Nueva Nota"
+                    <TextBox Text="{Binding Path=Nota.Contenido, Mode=OneWay}"
                              Background="Azure"
                              Foreground="Black"
                              Height="200"
@@ -44,7 +46,7 @@
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Center"
                             DockPanel.Dock="Bottom">
-                    <ui:Button Click="AgregarNota"
+                    <ui:Button Command="{Binding AgregarNotaCommand}"
                                Margin="10 10 10 0"
                                Content="Agregar"
                                Width="105"

@@ -1,20 +1,17 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using Microsoft.Extensions.DependencyInjection;
 using Notas_Unison.ViewModels;
 
 namespace Notas_Unison.Pages;
 
 public partial class InformacionDeLaNota : Page
 {
-    public InformacionDeLaNota(NotaViewModel notaViewModel)
+    public InformacionDeLaNota()
     {
         InitializeComponent();
-        DataContext = notaViewModel;
-    }
-
-    private void ModificarNota(object sender, RoutedEventArgs e)
-    {
-        
+        var viewModel = App.Current.Services.GetService<NotaViewModel>();
+        DataContext = viewModel;
     }
 
     private void Cancelar(object sender, RoutedEventArgs e)
