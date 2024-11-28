@@ -15,11 +15,7 @@ public partial class MainWindowViewModel : ObservableObject
     {
         NavigationItems =
         [
-            new NavigationView()
-            {
-                Content = "Lista de Notas",
-                TargetPageType = typeof(ListaDeNotas)
-            },
+
 
         ];
     }

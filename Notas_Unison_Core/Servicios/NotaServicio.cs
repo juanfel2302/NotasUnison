@@ -1,4 +1,6 @@
-﻿using Notas_Unison_Core.Contratos.Repositorios;
+﻿using System;
+using System.Collections.Generic;
+using Notas_Unison_Core.Contratos.Repositorios;
 using Notas_Unison_Core.Contratos.Servicios;
 using Notas_Unison_Core.Modelos;
 

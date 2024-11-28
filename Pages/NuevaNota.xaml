@@ -9,7 +9,7 @@
       d:DataContext="{d:DesignInstance viewModel:NotaViewModel}"
       mc:Ignorable="d"
       Title="NuevaNota"
-      Height="450"
+      Height="650"
       Width="800"
       Background="#F0C1E1">
     <Grid>
@@ -27,36 +27,53 @@
                             Height="285"
                             Width="710"
                             DockPanel.Dock="Top">
-                    <TextBlock Text="Titulo"
-                               FontWeight="SemiBold"
-                               HorizontalAlignment="Left"/> 
-                    <ui:TextBox Text="{Binding Path=Nota.Titulo, Mode=OneWay}"
-                             Background="Azure"
-                             Foreground="Black"
-                             Margin="0 0 0 10"/>
-                    <TextBlock Text="Contenido"
-                               FontWeight="SemiBold"
-                               HorizontalAlignment="Left"/>
-                    <TextBox Text="{Binding Path=Nota.Contenido, Mode=OneWay}"
-                             Background="Azure"
-                             Foreground="Black"
-                             Height="200"
-                             Margin="0 0 0 10"/>
+                    <StackPanel>
+                        <TextBlock Text="Título:"
+                                 FontSize="16"
+                                 Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding Nota.Titulo}"
+                               FontSize="16"
+                               Margin="0,0,0,15"/>
+
+                        <TextBlock Text="Contenido:"
+                                 FontSize="16"
+                                 Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding Nota.Contenido}"
+                               FontSize="16"
+                               Height="100"
+                               TextWrapping="Wrap"
+                               AcceptsReturn="True"
+                               VerticalScrollBarVisibility="Auto"
+                               Margin="0,0,0,15"/>
+
+                        <TextBlock Text="Color de la nota:"
+                                 FontSize="16"
+                                 Margin="0,0,0,5"/>
+                        <ComboBox ItemsSource="{Binding ColoresDisponibles}"
+                                SelectedValue="{Binding ColorSeleccionado}"
+                                SelectedValuePath="Value"
+                                DisplayMemberPath="Key"
+                                Width="200"
+                                HorizontalAlignment="Left"
+                                Margin="0,0,0,15">
+                        </ComboBox>
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Center"
                             DockPanel.Dock="Bottom">
-                    <ui:Button Command="{Binding AgregarNotaCommand}"
-                               Margin="10 10 10 0"
-                               Content="Agregar"
-                               Width="105"
-                               Height="35"
-                               Background="#CB9DF0"
-                               Foreground="Azure"
-                               VerticalContentAlignment="Center"
-                               HorizontalContentAlignment="Center"
-                               FontWeight="Medium"
-                               CornerRadius="10">
+                    <ui:Button Content="{Binding TxtBotonFormulario}"
+                             Click="GuardarNota"
+                             HorizontalAlignment="Left"
+                             Margin="10 10 10 0"
+                             Width="105"
+                             Height="35"
+                             Background="#CB9DF0"
+                             Foreground="Azure"
+                             VerticalContentAlignment="Center"
+                             HorizontalContentAlignment="Center"
+                             FontWeight="Medium"
+                             CornerRadius="10">
                         <ui:Button.Icon>
                             <ui:SymbolIcon Symbol="Add24"/>
                         </ui:Button.Icon>
@@ -78,9 +95,21 @@
                     </ui:Button>
                 </StackPanel>
             </DockPanel>
-            <TextBlock Text="Sandoval Millan Alejandro"
-                       HorizontalAlignment="Center"
-                       DockPanel.Dock="Bottom"/>
+            <StackPanel DockPanel.Dock="Bottom" 
+                      HorizontalAlignment="Center" 
+                      Margin="0,20,0,10">
+                <TextBlock Text="Desarrollado por:" 
+                         FontSize="14" 
+                         FontWeight="SemiBold"
+                         HorizontalAlignment="Center"
+                         Margin="0,0,0,5"/>
+                <TextBlock Text="Sandoval Millán Alejandro" 
+                         FontSize="12"
+                         HorizontalAlignment="Center"/>
+                <TextBlock Text="Sánchez Morales Saúl Eduardo" 
+                         FontSize="12"
+                         HorizontalAlignment="Center"/>
+            </StackPanel>
         </DockPanel>
     </Grid>
 </Page>

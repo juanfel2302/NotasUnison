@@ -11,7 +11,7 @@ namespace Notas_Unison.ViewModels;
 public class NotaViewModel : INotifyPropertyChanged
 {
     public ObservableCollection<Nota> Notas { get; set; }
-    private Nota _selectedNote;
+    private Nota _selectedNote = null!;
 
     public Nota SelectedNote
     {

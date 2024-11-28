@@ -14,6 +14,10 @@
                    DockPanel.Dock="Bottom"
                    HorizontalAlignment="Center"
                    Margin="0 10 0 10"/>
+        <TextBlock Text="Espinoza Rivera Saul"
+                   DockPanel.Dock="Bottom"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 10"/>           
         
         <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center"

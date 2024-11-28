@@ -10,7 +10,7 @@
       d:DataContext="{d:DesignInstance viewModel:NotaViewModel}"
       mc:Ignorable="d"
       Title="Informacion De La Nota"
-      Height="450"
+      Height="650"
       Width="800"
       Background="#F0C1E1">
     <Grid>
@@ -82,6 +82,10 @@
             <TextBlock Text="Sandoval Millan Alejandro"
                        HorizontalAlignment="Center"
                        DockPanel.Dock="Bottom"/>
+             <TextBlock Text="Espinoza Rivera Saul"
+                   DockPanel.Dock="Bottom"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 10"/> 
         </DockPanel>
     </Grid>
 </Page>

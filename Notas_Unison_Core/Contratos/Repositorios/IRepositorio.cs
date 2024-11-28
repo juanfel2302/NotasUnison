@@ -1,4 +1,7 @@
-﻿namespace Notas_Unison_Core.Contratos.Repositorios;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Notas_Unison_Core.Contratos.Repositorios;
 
 public interface IRepositorio<T>
 {

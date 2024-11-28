@@ -1,4 +1,4 @@
-﻿using System.Configuration;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,15 +9,11 @@ using Notas_Unison_Core.Modelos;
 using Notas_Unison_Core.Repositorios;
 using Notas_Unison_Core.Servicios;
 using Notas_Unison.Pages;
-using Notas_Unison.ViewModels;
+using Notas_Unison.ViewModel;
 using Wpf.Ui;
-
 
 namespace Notas_Unison;
 
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
 public sealed partial class App : Application
 {
     public App()
@@ -32,51 +28,40 @@ public sealed partial class App : Application
         bd.Database.EnsureCreated();
     }
     
-    /// <summary>
-    /// Obtiene la referencia de la aplicación actual.
-    /// </summary>
     public new static App Current => (App)Application.Current;
     
-    /// <summary>
-    /// Obtiene el proveedor para resolver los servicios de la aplicación.
-    /// </summary>
     public IServiceProvider Services { get; }
     
-    /// <summary>
-    /// Configura los servicios de la aplicación.
-    /// </summary>
-    /// <returns></returns>
     private static IServiceProvider ConfigServices()
     {
         var services = new ServiceCollection();
         
-        // Servicios.
-        services.AddTransient<NotasBD>();
-        services.AddTransient<IServicio<Nota>, NotaServicio>();
-        services.AddTransient<IRepositorio<Nota>, NotaRepositorio>();
+        try
+        {
+            // Registrar servicios de base de datos
+            services.AddDbContext<NotasBD>(ServiceLifetime.Scoped);
+            services.AddScoped<IRepositorio<Nota>, NotaRepositorio>();
+            services.AddScoped<IServicio<Nota>, NotaServicio>();
+            
+            // Registrar el ViewModel como Singleton
+            services.AddSingleton<NotaViewModel>();
+            
+            // Registrar las vistas
+            services.AddTransient<MainWindow>();
+            services.AddTransient<InformacionDeLaNota>();
+            services.AddTransient<ListaDeNotas>();
+            services.AddTransient<NuevaNota>();
+            services.AddTransient<Title>();
 
+            var serviceProvider = services.BuildServiceProvider();
 
-        // MainWindow.
-        services.AddSingleton<MainWindow>();
-        services.AddSingleton<NotaViewModel>();
-                
-        // Views
-        services.AddTransient<InformacionDeLaNota>();
-        services.AddTransient<ListaDeNotas>();
-        services.AddTransient<NuevaNota>();
-        services.AddTransient<Title>();
-        
-        // ViewModels.
-        services.AddTransient<NotaViewModel>();
-        
-        return services.BuildServiceProvider();
-    }
-    
-    protected override void OnStartup(StartupEventArgs e)
-    {
-        base.OnStartup(e);
-        
-        var mainWindow = Services.GetRequiredService<MainWindow>();
-        mainWindow.Show();
+            return serviceProvider;
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Error al configurar servicios: {ex.Message}", "Error", 
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            throw;
+        }
     }
 }

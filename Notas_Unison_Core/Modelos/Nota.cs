@@ -1,4 +1,6 @@
-﻿namespace Notas_Unison_Core.Modelos;
+﻿using System;
+
+namespace Notas_Unison_Core.Modelos;
 
 public class Nota
 {

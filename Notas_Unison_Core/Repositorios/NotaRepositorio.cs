@@ -1,4 +1,7 @@
-﻿using Notas_Unison_Core.BaseDeDatos;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Notas_Unison_Core.BaseDeDatos;
 using Notas_Unison_Core.Modelos;
 using Notas_Unison_Core.Contratos.Repositorios;
 

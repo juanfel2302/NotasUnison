@@ -1,4 +1,7 @@
-﻿namespace Notas_Unison_Core.Contratos.Servicios;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Notas_Unison_Core.Contratos.Servicios;
 
 public interface IServicio<T>
 {
