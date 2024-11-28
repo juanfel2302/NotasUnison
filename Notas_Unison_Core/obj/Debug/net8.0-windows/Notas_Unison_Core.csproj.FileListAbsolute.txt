@@ -1,0 +1,6 @@
+C:\Users\mrkir\RiderProjects\Notas_Unison\Notas_Unison_Core\obj\Debug\net8.0-windows\Notas_Unison_Core.csproj.AssemblyReference.cache
+C:\Users\mrkir\RiderProjects\Notas_Unison\Notas_Unison_Core\obj\Debug\net8.0-windows\Notas_Unison_Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrkir\RiderProjects\Notas_Unison\Notas_Unison_Core\obj\Debug\net8.0-windows\Notas_Unison_Core.AssemblyInfoInputs.cache
+C:\Users\mrkir\RiderProjects\Notas_Unison\Notas_Unison_Core\obj\Debug\net8.0-windows\Notas_Unison_Core.AssemblyInfo.cs
+C:\Users\mrkir\RiderProjects\Notas_Unison\Notas_Unison_Core\obj\Debug\net8.0-windows\Notas_Unison_Core.csproj.CoreCompileInputs.cache
+C:\Users\mrkir\RiderProjects\Notas_Unison\Notas_Unison_Core\obj\Debug\net8.0-windows\Notas_Unison_Core.sourcelink.json
