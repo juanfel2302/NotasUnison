@@ -17,6 +17,8 @@ public class NotasBD : DbContext
     /// </summary>
     public DbSet<Nota> Notas { get; set; }
 
+    
+
     /// <summary>
     /// Configura la dirección de la base de datos.
     /// </summary>
@@ -24,7 +26,8 @@ public class NotasBD : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         // Directorio donde se guarda la base de datos.
-        var directorio = AppContext.BaseDirectory + "/_data";
+        var directorio = Path.Combine(AppContext.BaseDirectory, "_data");
+
 
         // 1. Asegurar que existe el directorio de la base de datos.
         if (!Directory.Exists(directorio)) Directory.CreateDirectory(directorio);
