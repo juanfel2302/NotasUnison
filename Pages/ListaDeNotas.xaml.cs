@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using Notas_Unison.ViewModel;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
 using MessageBoxButton = Wpf.Ui.Controls.MessageBoxButton;
 
@@ -7,9 +8,12 @@ namespace Notas_Unison.Pages;
 
 public partial class ListaDeNotas : Page
 {
-    public ListaDeNotas()
+    public ListaDeNotas(NotaViewModel nvm)
     {
         InitializeComponent();
+        
+        // Iniciar el DataContext
+        DataContext = nvm;
     }
 
     private void GoToNuevaNota(object sender, RoutedEventArgs e)
