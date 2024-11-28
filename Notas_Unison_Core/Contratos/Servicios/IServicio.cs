@@ -2,8 +2,9 @@
 
 public interface IServicio<T>
 {
-    void Agregar(T NotaNueva);
+    void Agregar(T notaNueva);
     List<T> Listar();
     T ObtenerPorId(Guid Id);
-    
+    void Modificar(T notaModificada);
+    void Eliminar(T notaAEliminar);
 }
